@@ -37,8 +37,6 @@ I built this project as a hands-on way to:
 
 - Helps new developers understand how **networks and ports** work
 - Serves as a lightweight alternative to more complex tools like Nmap
-- A good base for adding features like **threading, UDP scanning**, or **banner grabbing**
-- Can be expanded into a full-fledged **network scanner toolkit**
 
 ---
 
@@ -96,6 +94,3 @@ See the [LICENSE](LICENSE) file for details.
 ## 📬 Contributions
 
 Pull requests and suggestions are welcome.  
-If you have ideas to add threading, banner grabbing, or UDP scanning, feel free to fork and contribute!
-
-
