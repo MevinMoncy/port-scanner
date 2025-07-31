@@ -70,16 +70,25 @@ I built this project as a hands-on way to:
 
 ---
 
-### 🖼️ Example Output Explanation
+## 🖼️ Example Output
 
-In this example, the scanner was run against `127.0.0.1`, which is the loopback address for the local machine (also referred to as *localhost*). This means the scan was targeting the same system the script was executed on.
+This example shows the output when scanning `127.0.0.1`, which is the loopback IP address for the local machine (also known as *localhost*). This means the port scan was run on the same computer where the script was executed.
 
-The output reveals that the following ports were open:
+<p align="center">
+  <img src="images/screenshot.png" alt="Port Scanner Output" width="700">
+</p>
 
-- **Port 135**: Commonly used by Microsoft's Remote Procedure Call (RPC) services. It is often associated with DCOM (Distributed Component Object Model) and is crucial for many internal Windows processes.
-- **Port 445**: Used by Microsoft Directory Services, specifically for SMB (Server Message Block) protocol. This port allows for file sharing and other network-based interactions on Windows machines.
+### 🔍 Interpreting the Output
 
-These open ports are expected on most Windows machines and are often used for internal networking, remote management, and local communication services. This result demonstrates that the port scanner is functioning correctly and can identify open TCP ports on a target host.
+The scan revealed that the following ports were open:
+
+- **Port 135**  
+  This port is commonly used by Microsoft RPC (Remote Procedure Call) services. It is critical for DCOM (Distributed Component Object Model) communication and is often open by default on Windows systems to support internal processes.
+
+- **Port 445**  
+  This port is used for Microsoft SMB (Server Message Block) protocol. It supports file sharing, printer sharing, and various remote Windows operations. An open port 445 indicates that SMB services are available on the scanned machine.
+
+These results confirm that the port scanner can successfully identify open TCP ports and detect common services running on the local host.
 
 
 ---
