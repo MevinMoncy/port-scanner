@@ -1,5 +1,13 @@
+# This script scans a range of ports on a specified host and reports which ports are open.
+# It also measures the time taken for the scan and prints it in both seconds and minutes.
+#By Mevin Moncy
+
+#---------------------------# Import necessary libraries
+
 import socket
 import time  # to measure execution time
+
+#----------------------------# Function to scan ports
 
 def scan_ports(host, start_port, end_port):
     print(f"Scanning {host} from port {start_port} to {end_port}...")
@@ -35,5 +43,4 @@ def scan_ports(host, start_port, end_port):
 if __name__ == "__main__":
     target_host = input("Enter target IP or hostname: ")
     scan_ports(target_host, 1, 1024)
-# This script scans a range of ports on a specified host and reports which ports are open.
-# It also measures the time taken for the scan and prints it in both seconds and minutes.
+
