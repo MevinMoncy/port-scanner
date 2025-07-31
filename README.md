@@ -70,10 +70,16 @@ I built this project as a hands-on way to:
 
 ---
 
-<h2>🖼️ Example Output</h2>
-<p align="center">
-  <img src="images/screenshot.png" alt="Port Scanner Output" width="700">
-</p>
+### 🖼️ Example Output Explanation
+
+In this example, the scanner was run against `127.0.0.1`, which is the loopback address for the local machine (also referred to as *localhost*). This means the scan was targeting the same system the script was executed on.
+
+The output reveals that the following ports were open:
+
+- **Port 135**: Commonly used by Microsoft's Remote Procedure Call (RPC) services. It is often associated with DCOM (Distributed Component Object Model) and is crucial for many internal Windows processes.
+- **Port 445**: Used by Microsoft Directory Services, specifically for SMB (Server Message Block) protocol. This port allows for file sharing and other network-based interactions on Windows machines.
+
+These open ports are expected on most Windows machines and are often used for internal networking, remote management, and local communication services. This result demonstrates that the port scanner is functioning correctly and can identify open TCP ports on a target host.
 
 
 ---
