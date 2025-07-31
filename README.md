@@ -70,8 +70,10 @@ I built this project as a hands-on way to:
 
 ---
 
-## 💻 Example Output
-
+<h2>🖼️ Example Output</h2>
+<p align="center">
+  <img src="images/screenshot.png" alt="Port Scanner Output" width="700">
+</p>
 
 
 ---
