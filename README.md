@@ -94,6 +94,3 @@ See the [LICENSE](LICENSE) file for details.
 ## 📬 Contributions
 
 Pull requests and suggestions are welcome.  
-If you have ideas to add threading, banner grabbing, or UDP scanning, feel free to fork and contribute!
-
-
